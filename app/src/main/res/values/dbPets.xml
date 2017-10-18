@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TypeIDs:
+        0 — Гуманоид        1 — Магические
+        2 — Летающие        3 — Водные
+        4 — Неживые         5 — Животные  -->
+
+    <integer name="type_humanoid">0</integer>
+    <integer name="type_magic">1</integer>
+    <integer name="type_flyable">2</integer>
+    <integer name="type_water">3</integer>
+    <integer name="type_inanimate">4</integer>
+    <integer name="type_animal">5</integer>
+
+    <!-- TypeID >> Health >> Attack >> Speed -->
+    <!-- Spell Identifiers (x6) -->
+
+    <string name="PetName_0">Mimic</string>
+    <integer-array name="PetStats_0">
+        <item>@integer/type_magic</item> <item>161</item> <item>12</item> <item>9</item>
+        <item>0</item> <item>5</item> <item>6</item> <item>2</item> <item>1</item> <item>0</item>
+    </integer-array>
+
+    <string name="PetName_1">Beholder</string>
+    <integer-array name="PetStats_1">
+        <item>@integer/type_magic</item> <item>155</item> <item>11</item> <item>11</item>
+        <item>1</item> <item>2</item> <item>4</item> <item>1</item> <item>2</item> <item>0</item>
+    </integer-array>
+
+    <!--<string name="PetName_2">Ghost</string>-->
+    <!--<integer-array name="PetStats_2">-->
+        <!--<item>@integer/type_inanimate</item> <item></item>-->
+    <!--</integer-array>-->
+</resources>

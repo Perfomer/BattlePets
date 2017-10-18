@@ -1,0 +1,11 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/d_pet_0_inaction_0" android:duration="4000"/>
+    <item android:drawable="@drawable/d_pet_0_inaction_1" android:duration="75"/>
+    <item android:drawable="@drawable/d_pet_0_inaction_2" android:duration="100"/>
+    <item android:drawable="@drawable/d_pet_0_inaction_3" android:duration="125"/>
+    <item android:drawable="@drawable/d_pet_0_inaction_4" android:duration="200"/>
+    <item android:drawable="@drawable/d_pet_0_inaction_2" android:duration="100"/>
+    <item android:drawable="@drawable/d_pet_0_inaction_0" android:duration="75"/>
+    <item android:drawable="@drawable/d_pet_0_inaction_1" android:duration="35"/>
+</animation-list>

@@ -1,0 +1,8 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item android:drawable="@drawable/d_pet_1_spell_1_0" android:duration="150"/>
+    <item android:drawable="@drawable/d_pet_1_spell_1_1" android:duration="125"/>
+    <item android:drawable="@drawable/d_pet_1_spell_1_2" android:duration="400"/>
+    <item android:drawable="@drawable/d_pet_1_spell_1_1" android:duration="200"/>
+    <item android:drawable="@drawable/d_pet_1_spell_1_0" android:duration="100"/>
+</animation-list>

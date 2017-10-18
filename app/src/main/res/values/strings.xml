@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PetBattle</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_battle">BattleActivity</string>
+
+    <string name="rounds">раунда(ов)</string>
+    <string name="damage">ед. урона</string>
+    <string name="heal">ед. здоровья</string>
+
+    <string name="weak">слаб.</string>
+    <string name="strong">сильн.</string>
+
+    <string name="title_activity_loading">LoadingActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

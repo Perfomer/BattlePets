@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:battlepet="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="@dimen/Battle_TopPanel_width"
+        android:layout_height="@dimen/Battle_TopPanel_height"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/battle_toppanel_background"
+        android:paddingLeft="@dimen/Battle_TopPanel_paddingHorizontal"
+        android:paddingRight="@dimen/Battle_TopPanel_paddingHorizontal"
+        android:paddingTop="@dimen/Battle_TopPanel_paddingTop"
+        >
+
+        <!-- Панель игрока -->
+
+        <LinearLayout
+            android:id="@+id/Battle_TopPanel_Player_ExtraPets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/Battle_TopPanel_Player_ExtraPets_First"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.wellographics.petbattle.Views.RoundedCornerImageView
+                    android:id="@+id/Battle_TopPanel_Player_ExtraPets_First_Icon"
+                    android:visibility="gone"
+                    style="@style/Battle_TopPanel_ExtraPets_Icon" />
+
+                <com.wellographics.petbattle.Views.HealthBarView
+                    android:id="@+id/Battle_TopPanel_Player_ExtraPets_First_Healthbar"
+                    style="@style/Battle_TopPanel_ExtraPets_Healthbar"
+                    android:layout_alignBottom="@id/Battle_TopPanel_Player_ExtraPets_First_Icon"
+                    android:visibility="gone"
+                    battlepet:friendly="true"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Battle_TopPanel_Player_ExtraPets_Second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/Battle_TopPanel_ExtraPets_Healthbar_height">
+
+                <com.wellographics.petbattle.Views.RoundedCornerImageView
+                    android:id="@+id/Battle_TopPanel_Player_ExtraPets_Second_Icon"
+                    android:visibility="gone"
+                    style="@style/Battle_TopPanel_ExtraPets_Icon" />
+
+                <com.wellographics.petbattle.Views.HealthBarView
+                    android:id="@+id/Battle_TopPanel_Player_ExtraPets_Second_Healthbar"
+                    style="@style/Battle_TopPanel_ExtraPets_Healthbar"
+                    android:layout_alignBottom="@id/Battle_TopPanel_Player_ExtraPets_Second_Icon"
+                    android:visibility="gone"
+                    battlepet:friendly="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <com.wellographics.petbattle.Views.RoundedCornerImageView
+            android:id="@+id/Battle_TopPanel_Player_MainPet_Icon"
+            style="@style/Battle_TopPanel_MainPet_Icon"
+            android:layout_marginLeft="@dimen/Battle_TopPanel_MainPet_Icon_marginHorizontal"
+            android:layout_toRightOf="@id/Battle_TopPanel_Player_ExtraPets"
+            android:visibility="gone"
+            battlepet:deploy="false" />
+
+        <com.wellographics.petbattle.Views.FontView
+            android:id="@+id/Battle_TopPanel_Player_MainPet_Level"
+            style="@style/Battle_TopPanel_MainPet_Level"
+            android:layout_alignLeft="@id/Battle_TopPanel_Player_MainPet_Icon"
+            android:layout_marginLeft="@dimen/Battle_TopPanel_MainPet_Level_margin"
+            android:visibility="gone"
+            tools:text="3" />
+
+        <com.wellographics.petbattle.Views.FontView
+            android:id="@+id/Battle_TopPanel_Player_MainPet_Name"
+            style="@style/Battle_TopPanel_MainPet_Name"
+            android:layout_marginLeft="@dimen/Battle_TopPanel_MainPet_Name_marginHorizontal"
+            android:layout_toRightOf="@id/Battle_TopPanel_Player_MainPet_Icon"
+            android:visibility="gone"
+            tools:text="Beholder" />
+
+        <RelativeLayout
+            android:id="@+id/Battle_TopPanel_Player_HealthBar_Layout"
+            style="@style/Battle_TopPanel_HealthBar_Layout"
+            android:layout_marginLeft="@dimen/Battle_TopPanel_MainPet_Name_marginHorizontal"
+            android:layout_toRightOf="@id/Battle_TopPanel_Player_MainPet_Icon">
+
+            <com.wellographics.petbattle.Views.HealthBarView
+                android:id="@+id/Battle_TopPanel_Player_MainPet_HealthBar"
+                style="@style/Battle_TopPanel_MainPet_Healthbar"
+                android:visibility="gone"
+                battlepet:friendly="true" />
+
+            <com.wellographics.petbattle.Views.FontView
+                android:id="@+id/Battle_TopPanel_Player_MainPet_HealthBar_Text"
+                style="@style/Battle_TopPanel_HealthBar_Text"
+                android:visibility="gone"
+                android:text="100/100" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/Battle_TopPanel_Player_MainPet_Type"
+            style="@style/Battle_TopPanel_MainPet_Type"
+            android:layout_marginLeft="@dimen/Battle_TopPanel_MainPet_Type_marginHorizontal"
+            android:layout_toRightOf="@id/Battle_TopPanel_Player_HealthBar_Layout"
+            android:visibility="gone"
+            tools:src="@drawable/general_pettype_1" />
+
+        <View
+            android:id="@+id/Battle_TopPanel_Center"
+            android:layout_width="1px"
+            android:layout_height="1px"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/Battle_TopPanel_Player_TurnIndicator_Lower"
+            style="@style/Battle_TopPanel_TurnIndicator"
+            android:layout_marginRight="@dimen/Battle_TopPanel_TurnIndicator_marginSides"
+            android:layout_toLeftOf="@id/Battle_TopPanel_Center"
+            android:visibility="gone"
+            android:src="@drawable/battle_toppanel_indicator_l_on" />
+
+        <ImageView
+            android:id="@+id/Battle_TopPanel_Player_TurnIndicator_Upper"
+            style="@style/Battle_TopPanel_TurnIndicator"
+            android:layout_marginRight="@dimen/Battle_TopPanel_TurnIndicator_marginSides"
+            android:layout_toLeftOf="@id/Battle_TopPanel_Center"
+            android:visibility="gone"
+            android:src="@drawable/battle_toppanel_indicator_l_off" />
+
+        <!-- Панель противника -->
+
+        <LinearLayout
+            android:id="@+id/Battle_TopPanel_Enemy_ExtraPets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/Battle_TopPanel_Enemy_ExtraPets_First"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.wellographics.petbattle.Views.RoundedCornerImageView
+                    android:id="@+id/Battle_TopPanel_Enemy_ExtraPets_First_Icon"
+                    android:visibility="gone"
+                    style="@style/Battle_TopPanel_ExtraPets_Icon" />
+
+                <com.wellographics.petbattle.Views.HealthBarView
+                    android:id="@+id/Battle_TopPanel_Enemy_ExtraPets_First_Healthbar"
+                    style="@style/Battle_TopPanel_ExtraPets_Healthbar"
+                    android:layout_alignBottom="@id/Battle_TopPanel_Enemy_ExtraPets_First_Icon"
+                    android:visibility="gone"
+                    battlepet:friendly="false" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Battle_TopPanel_Enemy_ExtraPets_Second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/Battle_TopPanel_ExtraPets_Healthbar_height">
+
+                <com.wellographics.petbattle.Views.RoundedCornerImageView
+                    android:id="@+id/Battle_TopPanel_Enemy_ExtraPets_Second_Icon"
+                    android:visibility="gone"
+                    style="@style/Battle_TopPanel_ExtraPets_Icon" />
+
+                <com.wellographics.petbattle.Views.HealthBarView
+                    android:id="@+id/Battle_TopPanel_Enemy_ExtraPets_Second_Healthbar"
+                    style="@style/Battle_TopPanel_ExtraPets_Healthbar"
+                    android:layout_alignBottom="@id/Battle_TopPanel_Enemy_ExtraPets_Second_Icon"
+                    android:visibility="gone"
+                    battlepet:friendly="false" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/Battle_TopPanel_Enemy_TurnIndicator_Lower"
+            style="@style/Battle_TopPanel_TurnIndicator"
+            android:layout_marginLeft="@dimen/Battle_TopPanel_TurnIndicator_marginSides"
+            android:layout_toRightOf="@id/Battle_TopPanel_Center"
+            android:visibility="gone"
+            android:src="@drawable/battle_toppanel_indicator_r_light" />
+
+        <ImageView
+            android:id="@+id/Battle_TopPanel_Enemy_TurnIndicator_Upper"
+            style="@style/Battle_TopPanel_TurnIndicator"
+            android:layout_marginLeft="@dimen/Battle_TopPanel_TurnIndicator_marginSides"
+            android:visibility="gone"
+            android:layout_toRightOf="@id/Battle_TopPanel_Center"
+            android:src="@drawable/battle_toppanel_indicator_r_off" />
+
+        <com.wellographics.petbattle.Views.RoundedCornerImageView
+            android:id="@+id/Battle_TopPanel_Enemy_MainPet_Icon"
+            style="@style/Battle_TopPanel_MainPet_Icon"
+            android:layout_marginRight="@dimen/Battle_TopPanel_MainPet_Icon_marginHorizontal"
+            android:visibility="gone"
+            android:layout_toLeftOf="@id/Battle_TopPanel_Enemy_ExtraPets"
+            battlepet:deploy="true" />
+
+        <com.wellographics.petbattle.Views.FontView
+            android:id="@+id/Battle_TopPanel_Enemy_MainPet_Level"
+            style="@style/Battle_TopPanel_MainPet_Level"
+            android:layout_alignRight="@id/Battle_TopPanel_Enemy_MainPet_Icon"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/Battle_TopPanel_MainPet_Level_margin"
+            tools:text="3" />
+
+        <com.wellographics.petbattle.Views.FontView
+            android:id="@+id/Battle_TopPanel_Enemy_MainPet_Name"
+            style="@style/Battle_TopPanel_MainPet_Name"
+            android:layout_marginRight="@dimen/Battle_TopPanel_MainPet_Name_marginHorizontal"
+            android:visibility="gone"
+            android:layout_toLeftOf="@id/Battle_TopPanel_Enemy_MainPet_Icon"
+            tools:text="Beholder" />
+
+        <RelativeLayout
+            android:id="@+id/Battle_TopPanel_Enemy_HealthBar_Layout"
+            style="@style/Battle_TopPanel_HealthBar_Layout"
+            android:layout_marginRight="@dimen/Battle_TopPanel_MainPet_Name_marginHorizontal"
+            android:layout_toLeftOf="@id/Battle_TopPanel_Enemy_MainPet_Icon">
+
+            <com.wellographics.petbattle.Views.HealthBarView
+                android:id="@+id/Battle_TopPanel_Enemy_MainPet_HealthBar"
+                style="@style/Battle_TopPanel_MainPet_Healthbar"
+                android:visibility="gone"
+                battlepet:friendly="false" />
+
+            <com.wellographics.petbattle.Views.FontView
+                android:id="@+id/Battle_TopPanel_Enemy_MainPet_HealthBar_Text"
+                style="@style/Battle_TopPanel_HealthBar_Text"
+                android:visibility="gone"
+                android:text="100/100" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/Battle_TopPanel_Enemy_MainPet_Type"
+            style="@style/Battle_TopPanel_MainPet_Type"
+            android:layout_marginRight="@dimen/Battle_TopPanel_MainPet_Type_marginHorizontal"
+            android:layout_toLeftOf="@id/Battle_TopPanel_Enemy_HealthBar_Layout"
+            android:visibility="gone"
+            tools:src="@drawable/general_pettype_0" />
+
+    </RelativeLayout>
+
+    <GridView style="@style/Battle_TopPanel_EffectsList"
+        android:id="@+id/Battle_TopPanel_Player_Effects"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/Battle_TopPanel_Effects_marginLeft"
+        />
+
+    <GridView style="@style/Battle_TopPanel_EffectsList"
+        android:id="@+id/Battle_TopPanel_Enemy_Effects"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/Battle_TopPanel_Effects_marginLeft"
+        />
+</RelativeLayout>

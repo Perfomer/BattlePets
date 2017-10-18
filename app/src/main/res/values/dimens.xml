@@ -1,0 +1,77 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- DEBUG -->
+
+    <dimen name="Main_BottomBar_height">100dp</dimen>
+
+    <dimen name="Battle_General_Padding">20dp</dimen>
+    <dimen name="Battle_MobPreview_Image_size">100dp</dimen>
+    <dimen name="Battle_MobPreview_HealthBar_size">250dp</dimen>
+    <dimen name="Battle_MobPreview_Image_marginRight">20dp</dimen>
+    <dimen name="Battle_MobPreview_Name_textSize">20sp</dimen>
+    <dimen name="Battle_MobView_Image_size">355dp</dimen>
+    <dimen name="Battle_MobView_Layout_marginBottom">150dp</dimen>
+    <dimen name="Battle_MobView_Image_marginBottom">25dp</dimen>
+    <dimen name="Battle_MobView_Image_marginLeft">-5dp</dimen>
+    <dimen name="Battle_MobView_Shadow_width">210dp</dimen>
+    <dimen name="Battle_MobView_Shadow_height">25dp</dimen>
+    <dimen name="Battle_MobView_Shadow_marginBottom">25dp</dimen>
+
+    <!-- /DEBUG -->
+
+    <dimen name="Battle_SwimmingText_marginHorizontal">100dp</dimen>
+    <dimen name="Battle_SwimmingText_marginBottom">300dp</dimen>
+    <dimen name="Battle_SwimmingText_additionalMarginHorizontal">230dp</dimen>
+    <dimen name="Battle_SwimmingText_Size_normal">28sp</dimen>
+    <dimen name="Battle_SwimmingText_Size_critical">36sp</dimen>
+
+    <dimen name="Battle_TopPanel_height">100dp</dimen>
+    <dimen name="Battle_TopPanel_width">1200dp</dimen>
+    <dimen name="Battle_TopPanel_marginTop">20dp</dimen>
+    <dimen name="Battle_TopPanel_paddingHorizontal">50dp</dimen>
+    <dimen name="Battle_TopPanel_paddingTop">15dp</dimen>
+
+    <dimen name="Battle_TopPanel_MainPet_Icon_size">75dp</dimen>
+    <dimen name="Battle_TopPanel_MainPet_Icon_marginHorizontal">8dp</dimen>
+    <dimen name="Battle_TopPanel_MainPet_Name_textSize">20sp</dimen>
+    <dimen name="Battle_TopPanel_MainPet_Name_marginHorizontal">10dp</dimen>
+    <dimen name="Battle_TopPanel_MainPet_Name_marginTop">0dp</dimen>
+    <dimen name="Battle_TopPanel_MainPet_Type_size">38dp</dimen>
+    <dimen name="Battle_TopPanel_MainPet_Type_padding">8dp</dimen>
+    <dimen name="Battle_TopPanel_MainPet_Type_marginHorizontal">15dp</dimen>
+    <dimen name="Battle_TopPanel_MainPet_Level_size">25dp</dimen>
+    <dimen name="Battle_TopPanel_MainPet_Level_textSize">12sp</dimen>
+    <dimen name="Battle_TopPanel_MainPet_Level_margin">-3dp</dimen>
+    <dimen name="Battle_TopPanel_MainPet_Healthbar_width">150dp</dimen>
+    <dimen name="Battle_TopPanel_MainPet_Healthbar_height">45dp</dimen>
+    <dimen name="Battle_TopPanel_MainPet_HealthBar_textSize">15sp</dimen>
+
+    <dimen name="Battle_TopPanel_ExtraPets_Icon_size">35dp</dimen>
+    <dimen name="Battle_TopPanel_ExtraPets_Healthbar_height">3dp</dimen>
+    <dimen name="Battle_TopPanel_ExtraPets_Healthbar_width">32dp</dimen>
+    <dimen name="Battle_TopPanel_ExtraPets_Healthbar_marginBottom">2dp</dimen>
+
+    <dimen name="Battle_TopPanel_TurnIndicator_height">30dp</dimen>
+    <dimen name="Battle_TopPanel_TurnIndicator_width">260dp</dimen>
+    <dimen name="Battle_TopPanel_TurnIndicator_marginSides">30dp</dimen>
+
+    <dimen name="Battle_TopPanel_Effects_width">320dp</dimen>
+    <dimen name="Battle_TopPanel_Effects_height">120dp</dimen>
+    <dimen name="Battle_TopPanel_Effects_marginLeft">90dp</dimen>
+    <dimen name="Battle_TopPanel_Effects_marginTop">110dp</dimen>
+
+    <dimen name="Battle_BottomPanel_height">160dp</dimen>
+    <dimen name="Battle_BottomPanel_width">665dp</dimen>
+    <dimen name="Battle_BottomPanel_paddingHorizontal">77dp</dimen>
+    <dimen name="Battle_BottomPanel_paddingTop">81dp</dimen>
+    <dimen name="Battle_BottomPanel_Spell_size">55dp</dimen>
+    <dimen name="Battle_BottomPanel_Spell_marginHorizontal">12dp</dimen>
+
+
+    <dimen name="Pet_Size_default">300dp</dimen>
+    <dimen name="Pet_Size_1">400dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

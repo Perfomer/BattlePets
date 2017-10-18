@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--TAGS (for replacing by parseDescription method):
+        @at - damage
+        @ac - accuracy
+        @h - heal
+        @c - cooldown
+        @d - duration
+        @eN - extra field (index N)
+        -->
+
+    <!-- Damage >> Heal >> Accuracy >> Duration >> Cooldown -->
+    <!-- ExtraFields -->
+
+    <string name="SpellName_0">Укус</string>
+    <bool name="SpellMovable_0">true</bool>
+    <bool name="SpellEffect_0">false</bool> <bool name="SpellEffectActive_0">false</bool>
+    <string name="SpellDescription_0">
+        Наносит @at урона.</string>
+    <integer-array name="SpellStats_0">
+        <item>42</item> <item>0</item> <item>100</item> <item>0</item> <item>0</item>
+    </integer-array>
+
+    <string name="SpellName_1">Луч</string>
+    <bool name="SpellMovable_1">false</bool>
+    <bool name="SpellEffect_1">false</bool>
+    <string name="SpellDescription_1">
+        Наносит @at урона.</string>
+    <integer-array name="SpellStats_1">
+        <item>31</item> <item>0</item> <item>100</item> <item>0</item> <item>0</item>
+    </integer-array>
+
+    <string name="SpellName_2">Антимагия</string>
+    <bool name="SpellMovable_2">false</bool>
+    <bool name="SpellEffect_2">true</bool>
+    <string name="SpellDescription_2">
+        Удаляет с игрока все отрицательные и положительные эффекты.</string>
+    <integer-array name="SpellStats_2">
+        <item>0</item> <item>0</item> <item>100</item> <item>0</item> <item>2</item>
+    </integer-array>
+
+    <string name="SpellName_3">Страж души</string>
+    <bool name="SpellMovable_3">false</bool>
+    <bool name="SpellEffect_3">true</bool>
+    <string name="SpellDescription_3">
+        Вас окружает стена могущественной магии, которая блокирует следующую атаку.</string>
+    <integer-array name="SpellStats_3">
+        <item>0</item> <item>0</item> <item>100</item> <item>0</item> <item>3</item>
+    </integer-array>
+    <integer-array name="SpellExtraStats_3">
+        <item>0</item> <item>1</item>
+    </integer-array>
+
+    <string name="SpellName_4">Чародейская вспышка</string>
+    <bool name="SpellMovable_4">false</bool>
+    <bool name="SpellEffect_4">true</bool>
+    <string name="SpellDescription_4">
+        Концентрирует мощь тайной магии на противнике, нанося @at.
+        Урон возрастает на @e0 после каждого использования. Урон суммируется не более @e1 раз подряд.</string>
+    <integer-array name="SpellStats_4">
+        <item>30</item> <item>0</item> <item>100</item> <item>0</item> <item>0</item>
+    </integer-array>
+    <integer-array name="SpellExtraStats_4">
+        <item>5</item> <item>8</item>
+    </integer-array>
+
+    <string name="SpellName_5">Дополнительная броня</string>
+    <bool name="SpellMovable_5">false</bool>
+    <bool name="SpellEffect_5">true</bool>
+    <string name="SpellDescription_5">
+        Дополнительные бронепластины, которые снижают получаемый урон на 50% на @d.
+    </string>
+    <integer-array name="SpellStats_5">
+        <item>0</item> <item>0</item> <item>100</item> <item>3</item> <item>0</item>
+    </integer-array>
+    <integer-array name="SpellExtraStats_5">
+        <item>50</item>
+    </integer-array>
+
+    <string name="SpellName_6">Ликвидация</string>
+    <bool name="SpellMovable_6">false</bool>
+    <bool name="SpellEffect_6">true</bool>
+    <string name="SpellDescription_6">
+        Первое использование: увеличивает наносимый урон на @e1% на @d.\n
+        Второе использование: обрушивает на врага шквал ударов и наносит @at.
+    </string>
+    <integer-array name="SpellStats_6">
+        <item>67</item> <item>0</item> <item>100</item> <item>0</item> <item>0</item>
+    </integer-array>
+    <integer-array name="SpellExtraStats_6">
+        <item>10</item> <item>3</item> <item>0</item>
+    </integer-array>
+
+</resources>

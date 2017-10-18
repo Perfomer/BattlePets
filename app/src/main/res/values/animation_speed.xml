@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="animation_0_inactive_breath">1000</integer>
+    <integer name="animation_0_inactive_long">450</integer>
+    <integer name="animation_0_inactive_short">50</integer>
+    <integer name="animation_0_inactive">150</integer>
+
+</resources>

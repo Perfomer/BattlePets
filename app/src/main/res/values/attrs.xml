@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="HealthBarView">
+        <attr name="size" format="enum">
+            <enum name="small" value="0" />
+            <enum name="large" value="1" />
+        </attr>
+        <attr name="friendly" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedCornerImageView">
+        <attr name="frameType" format="enum">
+            <enum name="noFrame" value="-1" />
+            <enum name="extra_pet" value="0" />
+            <enum name="main_pet" value="2" />
+            <enum name="spell" value="1" />
+        </attr>
+        <attr name="frameStyle" format="enum">
+            <enum name="silver" value="-10" />
+            <enum name="gold" value="-11" />
+        </attr>
+        <attr name="radius" format="integer" />
+        <attr name="roundMainImage" format="boolean" />
+        <attr name="deploy" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FontView">
+        <attr name="font" format="enum">
+            <enum name="thin" value="0" />
+            <enum name="light" value="1" />
+            <enum name="medium" value="2" />
+            <enum name="bold" value="3" />
+        </attr>
+
+        <attr name="shadow" format="enum">
+            <enum name="none" value="0" />
+            <enum name="light" value="1" />
+            <enum name="dark" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+</resources>

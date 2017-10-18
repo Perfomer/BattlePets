@@ -1,0 +1,13 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/d_pet_0_inaction_0" android:duration="60"/>
+    <item android:drawable="@drawable/d_pet_0_moving_0" android:duration="60"/>
+    <item android:drawable="@drawable/d_pet_0_moving_1" android:duration="85"/>
+    <item android:drawable="@drawable/d_pet_0_moving_2" android:duration="110"/>
+    <item android:drawable="@drawable/d_pet_0_moving_3" android:duration="135"/>
+    <item android:drawable="@drawable/d_pet_0_moving_2" android:duration="105"/>
+    <item android:drawable="@drawable/d_pet_0_moving_1" android:duration="80"/>
+    <item android:drawable="@drawable/d_pet_0_moving_0" android:duration="55"/>
+    <item android:drawable="@drawable/d_pet_0_inaction_0" android:duration="30"/>
+    <item android:drawable="@drawable/d_pet_0_moving_4" android:duration="17"/>
+</animation-list>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/Battle_BottomPanel_width"
+    android:layout_height="@dimen/Battle_BottomPanel_height"
+    android:background="@drawable/battle_bottompanel_background"
+    android:paddingLeft="@dimen/Battle_BottomPanel_paddingHorizontal"
+    android:paddingRight="@dimen/Battle_BottomPanel_paddingHorizontal"
+    android:paddingTop="@dimen/Battle_BottomPanel_paddingTop">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout style="@style/Battle_BottomPanel_SpellLayout">
+
+            <com.wellographics.petbattle.Views.RoundedCornerImageView
+                style="@style/Battle_BottomPanel_SpellIcon"
+                android:tag="0" />
+
+            <com.wellographics.petbattle.Views.FontView
+                style="@style/Battle_IconText"
+                android:tag="1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/Battle_BottomPanel_SpellLayout">
+
+            <com.wellographics.petbattle.Views.RoundedCornerImageView
+                style="@style/Battle_BottomPanel_SpellIcon"
+                android:tag="2" />
+
+            <com.wellographics.petbattle.Views.FontView
+                style="@style/Battle_IconText"
+                android:tag="3" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/Battle_BottomPanel_SpellLayout">
+
+
+            <com.wellographics.petbattle.Views.RoundedCornerImageView
+                style="@style/Battle_BottomPanel_SpellIcon"
+                android:tag="4" />
+
+            <com.wellographics.petbattle.Views.FontView
+                style="@style/Battle_IconText"
+                android:tag="5" />
+
+        </RelativeLayout>
+
+        <com.wellographics.petbattle.Views.RoundedCornerImageView
+            style="@style/Battle_BottomPanel_ButtonIcon"
+            android:background="@drawable/icon_switch"
+            android:tag="6" />
+
+        <com.wellographics.petbattle.Views.RoundedCornerImageView
+            style="@style/Battle_BottomPanel_ButtonIcon"
+            android:background="@drawable/icon_bag"
+            android:tag="7" />
+
+        <com.wellographics.petbattle.Views.RoundedCornerImageView
+            style="@style/Battle_BottomPanel_ButtonIcon"
+            android:background="@drawable/icon_pause"
+            android:tag="8" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

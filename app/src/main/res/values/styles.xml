@@ -1,0 +1,159 @@
+<resources xmlns:battlepet="http://schemas.android.com/apk/res-auto">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+
+    <style name="Battle_TopPanel_ExtraPets_Icon">
+        <item name="android:layout_width">@dimen/Battle_TopPanel_ExtraPets_Icon_size</item>
+        <item name="android:layout_height">@dimen/Battle_TopPanel_ExtraPets_Icon_size</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/battle_toppanel_extrapets_iconbackground</item>
+        <item name="radius">25</item>
+        <item name="frameType">extra_pet</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="Battle_TopPanel_ExtraPets_Healthbar">
+        <item name="android:layout_width">@dimen/Battle_TopPanel_ExtraPets_Healthbar_width</item>
+        <item name="android:layout_height">@dimen/Battle_TopPanel_ExtraPets_Healthbar_height</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="size">small</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_marginBottom">
+            @dimen/Battle_TopPanel_ExtraPets_Healthbar_marginBottom
+        </item>
+    </style>
+
+    <style name="Battle_TopPanel_MainPet_Icon">
+        <item name="android:layout_width">@dimen/Battle_TopPanel_MainPet_Icon_size</item>
+        <item name="android:layout_height">@dimen/Battle_TopPanel_MainPet_Icon_size</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/battle_toppanel_mainpet_iconbackground</item>
+        <item name="android:background">@null</item>
+        <item name="frameType">main_pet</item>
+    </style>
+
+    <style name="Battle_TopPanel_MainPet_Level">
+        <item name="android:layout_width">@dimen/Battle_TopPanel_MainPet_Level_size</item>
+        <item name="android:layout_height">@dimen/Battle_TopPanel_MainPet_Level_size</item>
+        <item name="android:layout_alignBottom">@id/Battle_TopPanel_Player_MainPet_Icon</item>
+        <item name="android:layout_marginBottom">@dimen/Battle_TopPanel_MainPet_Level_margin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/general_symbol_background</item>
+        <item name="android:textSize">@dimen/Battle_TopPanel_MainPet_Level_textSize</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="Battle_IconText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@color/orange_red</item>
+        <item name="android:textSize">@dimen/Battle_TopPanel_MainPet_Name_textSize</item>
+        <item name="font">bold</item>
+    </style>
+
+    <style name="Battle_TopPanel_MainPet_Name" parent="Battle_IconText">
+        <item name="android:layout_marginTop">@dimen/Battle_TopPanel_MainPet_Name_marginTop</item>
+        <item name="android:layout_centerInParent">false</item>
+
+    </style>
+
+    <style name="Battle_TopPanel_HealthBar_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:textSize">@dimen/Battle_TopPanel_MainPet_HealthBar_textSize</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="font">thin</item>
+        <item name="shadow">dark</item>
+    </style>
+
+    <style name="Battle_TopPanel_MainPet_Healthbar">
+        <item name="android:layout_width">@dimen/Battle_TopPanel_MainPet_Healthbar_width</item>
+        <item name="android:layout_height">@dimen/Battle_TopPanel_MainPet_Healthbar_height</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="size">large</item>
+    </style>
+
+    <style name="Battle_TopPanel_HealthBar_Layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignBottom">@id/Battle_TopPanel_Player_MainPet_Icon</item>
+    </style>
+
+    <style name="Battle_TopPanel_MainPet_Type">
+        <item name="android:layout_width">@dimen/Battle_TopPanel_MainPet_Type_size</item>
+        <item name="android:layout_height">@dimen/Battle_TopPanel_MainPet_Type_size</item>
+        <item name="android:layout_alignBottom">@id/Battle_TopPanel_Player_HealthBar_Layout</item>
+        <item name="android:padding">@dimen/Battle_TopPanel_MainPet_Type_padding</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:background">@drawable/general_symbol_background</item>
+    </style>
+
+    <style name="Battle_TopPanel_TurnIndicator">
+        <item name="android:layout_width">@dimen/Battle_TopPanel_TurnIndicator_width</item>
+        <item name="android:layout_height">@dimen/Battle_TopPanel_TurnIndicator_height</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="Battle_TopPanel_EffectsList">
+        <item name="android:layout_width">@dimen/Battle_TopPanel_Effects_width</item>
+        <item name="android:layout_height">@dimen/Battle_TopPanel_Effects_height</item>
+        <item name="android:layout_marginTop">@dimen/Battle_TopPanel_Effects_marginTop</item>
+        <item name="android:gravity">center</item>
+        <item name="android:numColumns">5</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Battle_BottomPanel_SpellIcon">
+        <item name="android:layout_width">@dimen/Battle_BottomPanel_Spell_size</item>
+        <item name="android:layout_height">@dimen/Battle_BottomPanel_Spell_size</item>
+        <item name="android:onClick">onSpellButtonClick</item>
+        <item name="radius">30</item>
+        <item name="frameType">spell</item>
+        <item name="frameStyle">gold</item>
+    </style>
+
+    <style name="Battle_BottomPanel_ButtonIcon" parent="Battle_BottomPanel_SpellLayout">
+        <item name="android:layout_width">@dimen/Battle_BottomPanel_Spell_size</item>
+        <item name="android:layout_height">@dimen/Battle_BottomPanel_Spell_size</item>
+        <item name="android:onClick">onSpellButtonClick</item>
+        <item name="radius">30</item>
+        <item name="frameType">spell</item>
+        <item name="frameStyle">silver</item>
+    </style>
+
+    <style name="Battle_BottomPanel_SpellLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/Battle_BottomPanel_Spell_marginHorizontal
+        </item>
+        <item name="android:layout_marginRight">@dimen/Battle_BottomPanel_Spell_marginHorizontal
+        </item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+</resources>

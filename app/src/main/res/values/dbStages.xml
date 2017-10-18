@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Данные записываются в формате: -->
+    <!--    LOCATION_ID >> LEVEL -->
+    <!--    PET_ID >> SPELLS(x3) -->
+    <!-- Количество питомцев на уровне равно кол-ву строк в табличке -->
+
+    <integer-array name="StageStats_0">
+        <item>0</item> <item>1</item>
+    </integer-array>
+
+    <integer-array name="StagePets_0">
+        <item>0</item><item>0</item> <item>0</item> <item>0</item>
+        <item>0</item><item>0</item> <item>0</item> <item>0</item>
+        <item>0</item><item>0</item> <item>0</item> <item>0</item>
+    </integer-array>
+
+</resources>

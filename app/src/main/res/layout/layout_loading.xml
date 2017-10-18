@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LoadingScreen_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loading_background">
+
+    <com.wellographics.petbattle.Views.FontView
+        android:id="@+id/LoadingScreen_TextIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_centerInParent="true"
+        android:textSize="30sp"
+        android:textColor="@color/orange"
+        app:font="bold"
+        android:background="@color/black_overlay"
+        android:padding="10dp"
+        />
+
+</RelativeLayout>

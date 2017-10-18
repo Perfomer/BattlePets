@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Battle_MainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/battle_background_0"
+    android:fitsSystemWindows="true"
+    tools:context="com.wellographics.petbattle.Activities.BattleActivity">
+
+    <RelativeLayout
+        android:id="@+id/Battle_MobViewLayout_Player_RL"
+        android:layout_width="@dimen/Battle_MobView_Image_size"
+        android:layout_height="@dimen/Battle_MobView_Image_size"
+        android:layout_marginBottom="@dimen/Battle_MobView_Layout_marginBottom"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/Battle_MobView_Player_Shadow_IV"
+            android:layout_width="@dimen/Battle_MobView_Shadow_width"
+            android:layout_height="@dimen/Battle_MobView_Shadow_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/Battle_MobView_Shadow_marginBottom"
+            android:visibility="gone"
+            android:background="@drawable/d_pet_0_shadow" />
+
+        <ImageView
+            android:id="@+id/Battle_MobView_Player_IV"
+            android:layout_width="@dimen/Battle_MobView_Image_size"
+            android:layout_height="@dimen/Battle_MobView_Image_size"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/Battle_MobView_Image_marginBottom"
+            android:tag="Player"
+            android:visibility="gone"
+            tools:src="@drawable/a0_inactive" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Battle_MobViewLayout_Enemy_RL"
+        android:layout_width="@dimen/Battle_MobView_Image_size"
+        android:layout_height="@dimen/Battle_MobView_Image_size"
+        android:layout_marginBottom="@dimen/Battle_MobView_Layout_marginBottom"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/Battle_MobView_Enemy_Shadow_IV"
+            android:layout_width="@dimen/Battle_MobView_Shadow_width"
+            android:layout_height="@dimen/Battle_MobView_Shadow_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/Battle_MobView_Shadow_marginBottom"
+            android:visibility="gone"
+            android:background="@drawable/d_pet_0_shadow" />
+
+        <ImageView
+            android:id="@+id/Battle_MobView_Enemy_IV"
+            android:layout_width="@dimen/Battle_MobView_Image_size"
+            android:layout_height="@dimen/Battle_MobView_Image_size"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/Battle_MobView_Image_marginBottom"
+            android:tag="Enemy"
+            android:visibility="gone"
+            tools:src="@drawable/a1_inactive" />
+    </RelativeLayout>
+
+    <com.wellographics.petbattle.Views.FontView
+        android:id="@+id/playerStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Health: 150\nSpeed: 100\nAttack: 300" />
+
+    <com.wellographics.petbattle.Views.FontView
+        android:id="@+id/enemyStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="150dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Health: 150\nSpeed: 100\nAttack: 300" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Battle_TopPanel_marginTop"
+        android:gravity="center">
+
+        <include layout="@layout/battle_toppanel" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/Battle_TopPanel_marginTop"
+        android:gravity="center">
+
+        <include layout="@layout/battle_bottompanel" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_loading" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="TEST"
+        android:onClick="onTestClick"/>
+
+</RelativeLayout>
